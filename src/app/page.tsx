@@ -49,7 +49,14 @@ const IndexPage = () => {
   };
 
   return (
-    <div style={styles.container}>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '100vh',
+      fontFamily: 'Arial, sans-serif'
+    }}>
       <p style={styles.counter}>Contador: {counter}</p>
       <div style={styles.buttonContainer}>
         <button onClick={incrementCounter} style={styles.button}>+</button>
